@@ -1,6 +1,6 @@
 {
   "name": "hsl-to-hex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "this module allows conversion from HSL (hue, saturation, luminisoty) values into hex-based RGB representation",
   "main": "index.js",
   "scripts": {
