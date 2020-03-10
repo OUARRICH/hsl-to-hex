@@ -1,10 +1,11 @@
 {
-  "name": "hsl-to-hex",
+  "name": "@said.ouarrich/hsl-to-hex",
   "version": "1.0.0",
-  "description": "this module allows conversion from HSL (hue, saturation, luminisoty) values into hex-based RGB representation",
+  "description": "Convert HSL colors to RGB colors in hex format. ## Install ```sh npm install --save @davidmarkclements/hsl-to-hex ``` ## API ``` require('hsl-to-hex') => Function hsl(hue, saturation, luminosity)` => String ``` ## Example ```js var hsl = require('hsl-to-hex') var hue = 133 var saturation = 40 var luminosity = 60 var hex = hsl(hue, saturation, luminosity) console.log(hex) // #70c282 ``` ## License ISC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap --cov test",
+    "lint": "standard"
   },
   "author": "Said OUARRICH",
   "license": "ISC",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/OUARRICH/hsl-to-hex/issues"
   },
-  "homepage": "https://github.com/OUARRICH/hsl-to-hex#readme"
+  "homepage": "https://github.com/OUARRICH/hsl-to-hex#readme",
+  "dependencies": {
+    "hsl-to-rgb-for-reals": "^1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1",
+    "tap": "^14.10.6"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
