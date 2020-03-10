@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Said OUARRICH",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OUARRICH/hsl-to-hex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OUARRICH/hsl-to-hex/issues"
+  },
+  "homepage": "https://github.com/OUARRICH/hsl-to-hex#readme"
 }
