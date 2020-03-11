@@ -1,10 +1,18 @@
 const toRgb = require('hsl-to-rgb-for-reals');
+const debug = require('debug')('hsl-to-hex');
 
-const max = (value, maxValue) => value > maxValue ? maxValue : value;
+const max = (value, maxValue) => {
+    debug(`ensuring ${value} is no more than ${maxValue}`);
+    return value > maxValue ? maxValue : value;
+}
 
-const min = (value, minValue) => value < minValue ? minValue : value;
+const min = (value, minValue) => {
+    debug(`ensuring ${value} is no less than ${minValue}`);
+    return value < minValue ? minValue : value;
+}
 
 const cycle = (value) => {
+    debug(`resolving ${value} within the 0-359 range`);
     value = max(value, 1e7);
     value = min(value, -1e7);
 
